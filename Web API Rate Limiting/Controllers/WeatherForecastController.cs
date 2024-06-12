@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 
-namespace ApiRateLimit.Controllers
+namespace Web_API_Rate_Limiting.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [EnableRateLimiting("FixedWindowPolicy")]
+    [EnableRateLimiting(policyName: "FixedWindowPolicy")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -20,7 +20,8 @@ namespace ApiRateLimit.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet]
+        [Route("GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -30,6 +31,15 @@ namespace ApiRateLimit.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+
+        [HttpGet]
+        [Route("GetName")]
+        [EnableRateLimiting(policyName: "TokenBucketPolicy")]
+        public IActionResult GetName()
+        {
+            return Ok("HeLLO");
         }
     }
 }
