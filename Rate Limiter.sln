@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rate Limiter Use IP Address", "Rate Limiter Use IP Address\Rate Limiter Use IP Address.csproj", "{BD8CE591-818E-4268-8F52-B98A5C53906B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiRateLimit", "ApiRateLimit\ApiRateLimit.csproj", "{C04219D7-0D5B-4105-AA89-092CF541233A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD8CE591-818E-4268-8F52-B98A5C53906B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8CE591-818E-4268-8F52-B98A5C53906B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8CE591-818E-4268-8F52-B98A5C53906B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8CE591-818E-4268-8F52-B98A5C53906B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04219D7-0D5B-4105-AA89-092CF541233A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04219D7-0D5B-4105-AA89-092CF541233A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04219D7-0D5B-4105-AA89-092CF541233A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04219D7-0D5B-4105-AA89-092CF541233A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84CBAEA7-E96F-42D5-8D46-B7584D21B1B0}
+	EndGlobalSection
+EndGlobal
